@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30)
-project(GameEngine)
+project(Atlas2D)
 
 set(CMAKE_WIN32_EXECUTABLE FALSE)
 
@@ -8,7 +8,7 @@ include_directories(include
     projectFiles/include
 )
 
-add_executable(GameEngine
+add_executable(Atlas2D
 projectFiles/main.cpp 
 projectFiles/knight.cpp
 projectFiles/staticSprites.cpp
@@ -23,4 +23,4 @@ src/util/shader.cpp
 src/util/stb_image.cpp
 deps/src/glad.c)
 
-target_link_libraries(GameEngine ${CMAKE_SOURCE_DIR}/deps/libs/libglfw3.a opengl32)
+target_link_libraries(Atlas2D ${CMAKE_SOURCE_DIR}/deps/libs/libglfw3.a opengl32)

@@ -9,7 +9,7 @@ animator leftA;
 
 void knight::wake()
 {
-    mySprite = animatedSprite2D("C:/Users/mottc/OneDrive/Desktop/VS Files/GameEngine/pixilart-sprite.png", 10, 1);
+    mySprite = animatedSprite2D("../pixilart-sprite.png", 10, 1);
     mySprite.assignShader(renderer::getBaseShader());
     mySprite.Transform.objectPosition.setPosition(context::getInstance().getWidth()/2, context::getInstance().getHeight()/2, 0.0f);
     mySprite.Transform.objectScale.scalar(3.0f, 3.0f);
