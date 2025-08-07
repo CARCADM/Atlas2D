@@ -1,0 +1,15 @@
+# ninja log v6
+14	82	7762445631576468	CMakeFiles/Atlas2D.dir/src/context.cpp.obj	3abb0c47fcdcee5b
+23	359	7762445631656749	CMakeFiles/Atlas2D.dir/src/util/animator.cpp.obj	f229563183498dd0
+26	399	7762445631691903	CMakeFiles/Atlas2D.dir/src/util/objGen.cpp.obj	7000931712aa80d7
+29	406	7762445631723250	CMakeFiles/Atlas2D.dir/src/util/shader.cpp.obj	82f828a98cb5639a
+9	446	7762445631525854	CMakeFiles/Atlas2D.dir/src/gameScript.cpp.obj	9ebf0454834115bc
+17	634	7762445631601507	CMakeFiles/Atlas2D.dir/src/orthoCamera.cpp.obj	58971c3b0043b850
+32	741	7762445631755655	CMakeFiles/Atlas2D.dir/src/util/stb_image.cpp.obj	1fb90d703fc7a95e
+35	743	7762445631786459	CMakeFiles/Atlas2D.dir/deps/src/glad.c.obj	1e0515049969615c
+7	821	7762445631500658	CMakeFiles/Atlas2D.dir/projectFiles/staticSprites.cpp.obj	247a6f1e2cf97ee6
+4	826	7762445631475618	CMakeFiles/Atlas2D.dir/projectFiles/knight.cpp.obj	2dece825b9c1df4c
+20	900	7762445631626666	CMakeFiles/Atlas2D.dir/src/renderer.cpp.obj	758a2328bee2a1bc
+2	908	7762445631450508	CMakeFiles/Atlas2D.dir/projectFiles/main.cpp.obj	72a0685b39e8463a
+12	1071	7762445631555860	CMakeFiles/Atlas2D.dir/src/sprite.cpp.obj	806a56e055c9772b
+1071	1188	7762445642148961	C:/Users/mottc/GithubCustom/Atlas2D/bin/Atlas2D.exe	48107c0ce01c9d

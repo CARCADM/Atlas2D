@@ -23,4 +23,8 @@ src/util/shader.cpp
 src/util/stb_image.cpp
 deps/src/glad.c)
 
+set_target_properties(Atlas2D PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin
+)
+
 target_link_libraries(Atlas2D ${CMAKE_SOURCE_DIR}/deps/libs/libglfw3.a opengl32)

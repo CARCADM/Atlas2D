@@ -1,0 +1,3 @@
+C:/Users/mottc/GithubCustom/Atlas2D/build/CMakeFiles/Atlas2D.dir
+C:/Users/mottc/GithubCustom/Atlas2D/build/CMakeFiles/edit_cache.dir
+C:/Users/mottc/GithubCustom/Atlas2D/build/CMakeFiles/rebuild_cache.dir
