@@ -21,6 +21,6 @@ src/util/animator.cpp
 src/util/objGen.cpp
 src/util/shader.cpp 
 src/util/stb_image.cpp
-src/glad.c)
+deps/src/glad.c)
 
 target_link_libraries(GameEngine ${CMAKE_SOURCE_DIR}/deps/libs/libglfw3.a opengl32)

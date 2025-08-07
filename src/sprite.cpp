@@ -395,59 +395,6 @@ void staticSprite2D::drawStaticSprites(unsigned int shader)
     glDrawElements(GL_TRIANGLES, combinedIndiciesData.size(), GL_UNSIGNED_INT, 0);
 }
 
-// Test methods (I like overly descriptive test methods because they look funny and are hard to accidentally call or forget to remove)
-void staticSprite2D::testBuildingTextureAtlasWithoutUsingGenerationPackingAlgorithmUsingTestPNGs()
-{
-    // CrazyAwesomeDudeOnAStick.png, Jobn.png, WillyWonka.png
-    int w1, h1, nrChannels1, w2, h2, nrChannels2, w3, h3, nrChannels3;
-    unsigned char* d1 = stbi_load("C:/Users/mottc/OneDrive/Desktop/VS Files/GameEngine/CrazyAwesomeDudeOnAStick.png", &w1, &h1, &nrChannels1, STBI_rgb_alpha);
-    unsigned char* d2 = stbi_load("C:/Users/mottc/OneDrive/Desktop/VS Files/GameEngine/Jobn.png", &w2, &h2, &nrChannels2, STBI_rgb_alpha);
-    unsigned char* d3 = stbi_load("C:/Users/mottc/OneDrive/Desktop/VS Files/GameEngine/WillyWonka.png", &w3, &h3, &nrChannels3, STBI_rgb_alpha);
-
-    // Add data to image data in proper order
-    sprite::textureAtlasData.emplace_back(imageData(w1, h1, nrChannels1, d1));
-    sprite::textureAtlasData.emplace_back(imageData(w2, h2, nrChannels2, d2));
-    sprite::textureAtlasData.emplace_back(imageData(w3, h3, nrChannels3, d3));
-
-    // Import metadata in a specific style
-    std::vector<texCoordMetadata> md = {
-        texCoordMetadata(0, 0, w1, h1),
-        texCoordMetadata(w1 + 1, 0, w2, h2),
-        texCoordMetadata(0, h1 + 1, w3, h3)
-    };
-    int wid, hig;
-    buildTextureAtlas(md, wid, hig);
-
-    stbi_image_free(d1);
-    stbi_image_free(d2);
-    stbi_image_free(d3);
-}
-void staticSprite2D::testCreatingTextureAtlasWithGenerationPackingAlgorithmAndBuildingAlgorithmUsingTestPNGsUseAfterConfirmingBuildTextureAtlasWorks()
-{
-    std::string paths[6] = {
-        "../WillyWonka.png",
-        "../Dwarf.png",
-        "../CrazyAwesomeDudeOnAStick.png",
-        "../Stardrop_Tea.png",
-        "../Aquamarine.png",
-        "../Jobn.png"
-    };
-
-    // CrazyAwesomeDudeOnAStick.png, Jobn.png, WillyWonka.png
-    for(int i = 0; i < 6; ++i)
-    {
-        int w, h, nrChannels;
-        unsigned char* data = stbi_load(paths[i].c_str(), &w, &h, &nrChannels, STBI_rgb_alpha);
-        if(!data)
-        {
-            std::cout << "ERROR LOADING IMAGE IN TEST" << std::endl;
-            return;
-        }
-        sprite::textureAtlasData.emplace_back(imageData(w, h, nrChannels, data));
-    }
-    genTextureAtlas(1000, 1000);
-}
-
 // Lots of static data
 std::vector<imageData> sprite::textureAtlasData = {};
 
