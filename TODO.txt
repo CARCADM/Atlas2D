@@ -1,4 +1,5 @@
 NOT STARTED:
+TODO efficient instancing using gl's built in instance command (Which is capped at 100 instances).
 TODO implement some sort of particle system along with the instancing implementation.
 TODO In sprite there is a method used to generate the texture atlas, add an option to disable writing image to disk using stbi_image_write.
 TODO fix the test methods so that they look in the test folder for the proper PNG.
@@ -6,9 +7,13 @@ TODO move all of the static variables related to static sprites into the static 
 TODO add padding to the texture atlas generation algorithm.
 TODO work on adding additional methods to the camera to allow for sprites to have a camera transform applied to them
 TODO optimize the transform calculations in the transform.hpp file using dirty flagging.
+TODO add a custom shader for batched vertex data.
 
 WORKING:
-TODO efficient instancing using gl's built in instance command (Which is capped at 100 instances). [Working]
+TODO make an entire GUI system using openGL and GLFW for the UI [Working]
 
 COMPLETE:
 TODO implement batching for static VBOs that are not intended to move. Essentially batch them all into one VAO for efficient rendering. [Complete]
+
+NOTES:
+PLZ ADD A DEFUALT CONSTRUCTOR IF YOU INTEND TO RUN IT DURING THE MAIN RENDER LOOP!!!
